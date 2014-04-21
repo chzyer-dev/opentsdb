@@ -6,13 +6,13 @@ public final class BuildData {
   /** Version string MAJOR.MINOR.MAINT */
   public static final String version = "2.0.0";
   /** Short revision at which this package was built. */
-  public static final String short_revision = "";
+  public static final String short_revision = "4c844a6";
   /** Full revision at which this package was built. */
-  public static final String full_revision = "";
+  public static final String full_revision = "4c844a601c4d1f0a0feb67f1dba36a7c65ae4358";
   /** UTC date at which this package was built. */
-  public static final String date = "2014/03/19 18:14:17 +0000";
+  public static final String date = "2013/08/05 18:53:00 +0000";
   /** UNIX timestamp of the time of the build. */
-  public static final long timestamp = 1395252857;
+  public static final long timestamp = 1375728780;
 
   /** Represents the status of the repository at the time of the build. */
   public static enum RepoStatus {
@@ -24,22 +24,22 @@ public final class BuildData {
     MODIFIED;
   }
   /** Status of the repository at the time of the build. */
-  public static final RepoStatus repo_status = RepoStatus.MODIFIED;
+  public static final RepoStatus repo_status = RepoStatus.MINT;
 
   /** Username of the user who built this package. */
-  public static final String user = "opentsdb";
+  public static final String user = "root";
   /** Host on which this package was built. */
-  public static final String host = "zmt45";
+  public static final String host = "wtdb-1-4";
   /** Path to the repository in which this package was built. */
-  public static final String repo = "/home/opentsdb/opentsdb-2.0.0/build";
+  public static final String repo = "/home/clarsen/ot_official/build";
 
   /** Human readable string describing the revision of this package. */
   public static final String revisionString() {
-    return "net.opentsdb 2.0.0 built at revision  (MODIFIED)";
+    return "net.opentsdb 2.0.0 built at revision 4c844a6 (MINT)";
   }
   /** Human readable string describing the build information of this package. */
   public static final String buildString() {
-    return "Built on 2014/03/19 18:14:17 +0000 by opentsdb@zmt45:/home/opentsdb/opentsdb-2.0.0/build";
+    return "Built on 2013/08/05 18:53:00 +0000 by root@wtdb-1-4:/home/clarsen/ot_official/build";
   }
 
   // These functions are useful to avoid cross-jar inlining.
